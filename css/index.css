@@ -1,0 +1,32 @@
+.header {
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-box {
+  /* display: flex; */
+}
+.container {
+  width: 1116px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+.address {
+  display: flex;
+  align-items: center;
+}
+.adress-item + .adress-item {
+  margin-left: 40px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-item + .nav-item {
+  margin-left: 40px;
+}
+
+.nav-link {
+}

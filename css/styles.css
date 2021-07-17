@@ -457,13 +457,14 @@ body {
 .footer-section {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-nav {
   margin-left: 50px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   font-style: inherit;
 }
 .footer-list {
@@ -541,8 +542,7 @@ body {
   background-color: var(--accent-color);
 }
 .footer-form {
-  margin-left: 74px;
-  /* ПО МАКЕТУ 93рх АЛЕ ТОДІ ПЕРЕНОСИТЬ КНОПНУ, БО НЕ ПОМІЩАЄТЬСЯ В РОЗМІР КОНТЕЙНЕРА 1200 */
+  margin-left: 93px;
 }
 .footer-input {
   background-color: inherit;
@@ -564,7 +564,7 @@ body {
 }
 .footer-button {
   display: inline-flex;
-  background: #2196f3;
+  background: var(--accent-color);
 
   padding: 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -806,12 +806,13 @@ body {
   background-image: url(../images/icon-check.svg);
   border: none;
 }
-/* .modal-checkbox:focus + .modal-checkbox-label::before {
-  border: 2px solid #757575;
-} */
+.modal-checkbox:focus + .modal-checkbox-label::before {
+  outline: 1px solid var(--accent-color);
+}
 .modal-checkbox {
   border: 2px solid #757575;
 }
+
 .modal-checkbox-label::before {
   display: block;
   content: '';
@@ -831,6 +832,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .modal-label-link {
